@@ -7,7 +7,7 @@ from inference.preprocess import (
     FingerprintFeatureEncoder,
     PolynomialInteractionGenerator,
     SubSampleData)
-from utils.loading import load_model
+from limix_utils.loading import load_model
 import torch
 from typing import List, Literal
 import random

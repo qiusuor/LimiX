@@ -18,10 +18,10 @@ from sklearn.metrics import accuracy_score, f1_score, log_loss
 from sklearn.metrics import roc_auc_score
 from pathlib import Path
 import torch.distributed as dist
-from utils.inference_utils import  generate_infenerce_config, sample_inferece_params
+from limix_utils.inference_utils import  generate_infenerce_config, sample_inferece_params
 
 os.environ['HF_ENDPOINT']="https://hf-mirror.com"
-from utils.utils import  download_datset, download_model
+from limix_utils.utils import  download_datset, download_model
 
 if not torch.cuda.is_available():
     raise SystemError('GPU device not found. For fast training, please enable GPU.')

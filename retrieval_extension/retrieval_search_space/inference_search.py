@@ -10,7 +10,7 @@ from retrieval_extension.retrieval_search_space.init_search_space import generat
 import numpy as np
 import torch
 
-from utils.inference_utils import auc_metric
+from limix_utils.inference_utils import auc_metric
 
 
 class RetrievalSearchHyperparameters:

@@ -8,7 +8,7 @@ def download_datset(repo_id:str, revision:str, repo_type:str='dataset', save_dir
         revision=revision,
         repo_type=repo_type,
         local_dir=save_dir,
-        ignore_patterns=None,
+        ignore_patterns="*DS_Store*",
         force_download=False
     )
     
